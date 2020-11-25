@@ -16,7 +16,7 @@ The source code has the following files.
 Following is the command I used to compile the executable:
 
 ```
-Fe"bin\triplex" /Fo"bin\tmp\\" /EHsc src\*.cpp
+cl /Fe"bin\triplex" /Fo"bin\tmp\\" /EHsc src\*.cpp
 ```
 
 This will compile all the content found in the src file, output the exe to the bin directory and output all the intermediate objects to the bin\tmp directory.
