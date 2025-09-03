@@ -9,7 +9,7 @@ namespace triplex{
 
     class safe_box{
         public:
-            safe_box(int level);
+            explicit safe_box(int level);
             safe_box(const safe_box& other);
             ~safe_box();
 
