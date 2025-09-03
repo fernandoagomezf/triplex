@@ -1,25 +1,31 @@
-# triplex
-I created this program while following the course "Unreal Engine C++ Developer: Learn C++ and Make Video Games" found in Udemy [1]. The program is a simple game that will give 
-the player the oportunity to crack open a safe box, which contains coins as loot. Each safe box has a level associated with, and can me cracked open by guessing the correct
-sequence of three numbers that protect its lock. There are five safe boxes available to loot, and the difficulty increases (e.g. the range of numbers available widens). 
+# Triplex
 
-The project has the following folders.
-* The folder src contains all the source code. 
-* The folder bin contains a compiled executable (for Windows). 
+Triplex es un pequeño programa que emula la lógica de un juego simple, el cual le da la oportunidad al jugador de intentar abrir una
+caja fuerte, la cual contiene monedas que puede saquear. Cada caja fuerte tiene un nivel asociado, y puede ser abierta si se adivina
+la secuencia correcta de los tres números que protegen sus pasadores protectores. Hay cinco cajas fuertes disponislbes para saquear, 
+y la dificultad va en aumento (i.e. aumenta el ragno de números disponibles).
 
-The source code has the following files. 
-* program.cpp. Contains the main function and is the entry point of the application.
-* application.hpp, application.cpp. Contains a class to manage the application flow, including the input / output from / to the console.
-* game.hpp, game.cpp. Contains the game class, which handles the levels of the game and the overall score. 
-* safe_box.hpp, safe_box.cpp. Contains the safe_box class, which handles the level, the generation of codes and determines whether a player wins or loses the level loot. 
+Creé este programa siguiendo el curso "Unreal Engine C++ Developer: Learn C++ and Make Video Games" que tomé en Udemy [1].
 
-Following is the command I used to compile the executable:
+El proyecto tiene la siguiente estructura estándar para aplicaciones C++:
+* include - contiene los encabezados con las declaraciones de las clases. 
+* src - contiene el código fuente con la implementación de las clases y la aplicación en general. 
+* .vscode - algunos archivos de configuración de Visual Studio Code.
+
+El código está organizado en los siguientes archivos:
+* program.cpp - contiene la función _main_ y es el punto de entrada de la aplicación. 
+* application.cpp - contiene la clase que gestiona el flujo de la aplicación, incluyendo la entrada y salida desde la consola. 
+* game.cpp - contiene la clase que gestiona los niveles del juego y el puntaje general. 
+* safe_box.cpp - contiene la clase que gestiona el nivel, la generación de códigos y determina las condiciones de victoria o derrota, así como el nivel del botín. 
+
+El código está integrado con Visual Studio Code, utiliza el último compilador de Visual C++ y el estándar de lenguaje C++ 20. Se proporciona un archivo _CMakeLists.txt_ para integrarlo con CMake. Desde Visual Studio Code, con las extensiones de C++ y CMake instaladas, solo se necestia ejecutar estos dos comandos en la paleta de comandos:
 
 ```
-cl /Fe"bin\triplex" /Fo"bin\tmp\\" /EHsc src\*.cpp
+CMake: Configure
+CMake: Build
 ```
 
-This will compile all the content found in the src file, output the exe to the bin directory and output all the intermediate objects to the bin\tmp directory.
+Con ello, el ejecutable estará disponible en la ruta  _build/debug/triplex.exe_. 
 
 References:
 [1] https://www.udemy.com/course/unrealcourse
