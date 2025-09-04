@@ -5,6 +5,10 @@ caja fuerte, la cual contiene monedas que puede saquear. Cada caja fuerte tiene 
 la secuencia correcta de los tres números que protegen sus pasadores protectores. Hay cinco cajas fuertes disponislbes para saquear, 
 y la dificultad va en aumento (i.e. aumenta el ragno de números disponibles).
 
+![C++](https://img.shields.io/badge/C++-20+-blue?logo=cplusplus)
+![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 Creé este programa siguiendo el curso "Unreal Engine C++ Developer: Learn C++ and Make Video Games" que tomé en Udemy [1].
 
 El proyecto tiene la siguiente estructura estándar para aplicaciones C++:
